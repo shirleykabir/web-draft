@@ -1,12 +1,12 @@
 // Fill In Navigation
 
 var navigationLinks = {
-    "About": "/index.html",
-    "The Team": "/the-team.html",
-    "Aircraft": "/aircraft.html",
-    "Recruitment": "/recruitment.html",
-    "Sponsors": "/sponsors.html",
-    "Contact Us": "/contact-us.html"
+    "About": "/web-draft/index.html",
+    "The Team": "/web-draft/the-team.html",
+    "Aircraft": "/web-draft/aircraft.html",
+    "Recruitment": "/web-draft/recruitment.html",
+    "Sponsors": "/web-draft/sponsors.html",
+    "Contact Us": "/web-draft/contact-us.html"
 };
 
 function convertToClassName(url) {
