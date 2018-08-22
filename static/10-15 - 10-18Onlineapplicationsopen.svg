@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 107">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #9a9a9a;
+        font-size: 18px;
+        font-family: IBMPlexSans, IBM Plex Sans;
+      }
+
+      .cls-2 {
+        font-family: IBMPlexSans-Italic, IBM Plex Sans;
+        font-style: italic;
+      }
+
+      .cls-3 {
+        font-size: 20px;
+        font-family: IBMPlexSans-Bold, IBM Plex Sans;
+        font-weight: 700;
+        fill: #000;
+      }
+    </style>
+  </defs>
+  <text id="_10_15_-_10_18_Online_applications_open" data-name="10/15 - 10/18
+Online
+applications
+open" class="cls-1" transform="translate(58 18)"><tspan x="-57.933" y="0">10/15 - 10/18</tspan><tspan class="cls-2"><tspan x="-25.632" y="28">Online</tspan></tspan><tspan class="cls-3"><tspan x="-57.87" y="56">applications</tspan><tspan x="-23.3" y="84">open</tspan></tspan></text>
+</svg>

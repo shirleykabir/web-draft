@@ -1,0 +1,234 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>CUAir | Home</title>
+    <meta name="description" conpatht="CUAir is an undergraduate student run project team at Cornell University.">
+    <meta name="author" conpatht="CUAir">
+    <meta property='og:title' conpatht='CUAir' />
+    <meta property='og:image' conpatht='static/compact-logo.png' />
+    <meta property='og:description' conpatht='CUAir is an undergraduate student run project team at Cornell University.' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/wgf4tbt.css">
+    <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
+    <script src="js/data.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <img class="compact-logo" src="static/compact-logo.png">
+        <div id="navigation"></div>
+    </div>
+    <div id="slideshows">
+        <img src="static/video.png" class="recruitment-video">
+        <img src="static/video.png" class="recruitment-slideshow">
+    </div>
+    <div id="quotes">
+        <center>
+            <div class="recruitment-quote">
+                <b>“</b>
+                Nam lacinia sollicitudin sapien, a aliquam augue faucibus ac. Morbi vel quam eu est mattis fermentum. Mauris eget lectus
+                a massa volutpat scelerisque.
+                <i>Somebody Real</i>
+            </div>
+            <div class="recruitment-quote">
+                <b>“</b>
+                Nam lacinia sollicitudin sapien, a aliquam augue faucibus ac. Morbi vel quam eu est mattis fermentum. Mauris eget lectus
+                a massa volutpat scelerisque.
+                <i>Somebody Real</i>
+            </div>
+        </center>
+
+    </div>
+    <div id="timeline">
+            <!-- <filter id="dropShadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+                    <feOffset dx="2" dy="4" />
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter> -->
+    </div>
+    <div id="faq">
+        <h4>Frequently Asked Questions</h4>
+        <br>
+        <center>
+            <div class="question">
+                <button class="expand">What's a project team?</button>
+                <div class="answer">
+                    <p>Cornell Engineering Project Teams mimic real-world engineering by bringing Cornell students, faculty,
+                        and staff together to solve complex problems in team-based settings. Breaking the rules of conventional
+                        wisdom is not foreign to Cornell’s engineers and the spirit of innovation is alive and well in our
+                        state-or-the-art labs and workshops. Many project teams compete regionally, nationally, and internationally
+                        in engineering design and build competitions and/or travel the globe for service learning projects
+                        and programs.</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="expand">Do I need experience to join CUAir?</button>
+                <div class="answer">
+                    <p>Nope! This is a learning experience, so we are looking for your potential to learn and grow, not how
+                        much you already know.
+                        <br> We understand that not everyone has had the same opportunities in high school. We ask about previous
+                        experience, like high school robotics, only as an indicator of interest in pursuing team robotics.
+                        Previous experience is not required to get on the team and having background experience is not expected.
+                        Resumes or supplementary materials are optional in the application process.
+                        <br> If you are applying to a software subteam, the exception is that you know the basics of programming
+                        logic in at least one language (even if that language is Scratch). This way, we know you enjoy programming
+                        and are confident in your interest to learn more about it and its application to UAS technology.</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="expand">As a member of the team, do I need to pay any dues or fees?</button>
+                <div class="answer">
+                    <p>As an engineering project team, there are no monetary requirements to join or participate.</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="expand">Do I need to be a meche/ece/cs major, or even an engineer to join?</button>
+                <div class="answer">
+                    <p>Nope! Members’ majors have spanned most of the engineering majors as well as non-engineering majors like
+                        AEM, Math, and Government. We are looking for people that have a genuine interest in and excitement
+                        about UAV/UAS technology. The only requirement is that you are an undergraduate student at Cornell
+                        University, passionate about learning and building.</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="expand">What's the recruitment process like?</button>
+                <div class="answer">
+                    <p>The recruitment timeline for 2018-2019 can be found here [put timeline and link here]. Applicants will
+                        be allowed to apply to up to two of the following: airframe and mechanical, electrical, design and
+                        operations, and software. After reviewing applications, we select several applicants to interview.
+                        Typically, two members of a subteam will conduct a 20-30 minute interview with each applicant. The
+                        interview consists of a few getting-to-know-you questions, followed by some puzzle-based, logical,
+                        or technical questions pertaining to the subteam. We try to allow a few minutes at the end for you
+                        to ask questions.
+                        <br>We primarily do recruiting in the fall. Occasionally, we also do a small round of recruiting in the
+                        spring.</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="expand">Can I apply to multiple project teams?</button>
+                <div class="answer">
+                    <p>You can! However, please keep in mind different project teams have different recruiting schedules and
+                        decision deadlines, and you may have to decide whether to join or decline a team before you receive
+                        all of your decisions. Acceptance of an offer from one project team necessarily means withdrawing
+                        all other project team applications.</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="expand">What's the time commitment?</button>
+                <div class="answer">
+                    <p>CUAir members typically spend anywhere between 9 and 15 hours a week on the team. As a team member, you
+                        can spend as much time as you like, but we ask that each CUAir member be willing to spend at least
+                        9 hours per week on work for the team. This directly translates to the 3 credit hours that team members
+                        receive for CUAir as a class. We find that team members often fall in love with the project they’re
+                        working on for CUAir and need to be reminded to spend time studying!</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="expand">What is CUAir's team culture like?</button>
+                <div class="answer">
+                    <p>CUAir has historically been a close-knit team that fosters an energetic and open atmosphere. It is common
+                        for team members to become close friends, with many members spending time with each other outside
+                        of our work. Throughout the course of their time on the team, members work closely with their sub-team
+                        members and as a result, typically get to know them very well. The team consistently has team-wide
+                        events, such as team dinners and sub-team mixers, as well as fun informal activities (for example,
+                        last year we held a CUAir-lympics where sub-teams competed in a series of team bonding events).
+                        <br> The team also has a history of nurturing diverse and skilled engineers. CUAir members and alumni
+                        work at large companies, like Google, SpaceX, and Facebook, as well as at mid-sized companies and
+                        start-ups. As a result, we provide a diverse and close network of career and professional advice
+                        for current undergraduate members. The team hosts career-building activities, such as resume reviews
+                        and mock interviews, to not only foster talented students but also engineers who will go on to have
+                        successful careers beyond undergraduate education.
+                    </p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="expand">What is the difference between the Airframe and Mechanical subteams?</button>
+                <div class="answer">
+                    <p>The Airframe subteam works on aerodynamic-focused and large-scale design projects, including the wings
+                        and tail. The mechanical subteam works on numerous individual system integration and human interaction
+                        focused design projects, including the fuselage and internal systems, the camera gimbal and airdrop
+                        subsystem, and ground systems such as the antenna tracker.
+                        <br> Both teams focus on technical designs using similar manufacturing techniques. They both use an iterative
+                        design process that utilizes rapid prototyping, and leverages composite materials to make a structural
+                        yet lightweight aircraft. The teams work collaboratively through all stages to create a cohesive
+                        and cutting edge UAV system.</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="expand">Pro tips?</button>
+                <div class="answer">
+                    <p>Please don’t hesitate to contact us at cuair_mae@cornell.edu if you have any questions! We will hold
+                        several information sessions before the application deadline and attending an information session
+                        will help you in the application process. To stay up to date with what we are doing, like us on Facebook,
+                        follow us on Twitter, Instagram, or send us a telegraph! I know what you’re thinking. Who uses Twitter
+                        anymore?</p>
+                </div>
+            </div>
+    </div>
+    </center>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>We Are</h5>
+                    CUAir is an interdisciplinary student team that designs, builds and tests a custom search and rescue unmanned aerial system.
+                    We are the world champions of an international unmanned aerial vehicle competition.
+                    <code>&copy; 2018 CUAir. All Rights Reserved.</code>
+                </div>
+                <div class="col-5">
+                    <h5>Site Map</h5>
+                    <div class="site-map"></div>
+                </div>
+                <div class="col">
+                    <h5>Follow Us On</h5>
+                    <div class="social-media">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/cornellunmannedairsystems" class="facebook">Facebook
+                                    <img src="static/social-media/Facebook.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/cuair" class="twitter">Twitter
+                                    <img src="static/social-media/Twitter.png"> </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cuairmae/" class="instagram">Instagram
+                                    <img src="static/social-media/Instagram.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/groups/6518396/profile" class="linkedin">LinkedIn
+                                    <img src="static/social-media/LinkedIn.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="js/recruitment.js"></script> -->
+    <script src="js/faq.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/graphics.js"></script>
+</body>
+
+</html>
