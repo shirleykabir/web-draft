@@ -446,7 +446,7 @@ path.loop {
     -ms-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
-    clip-path: url(#myClip);
+    /* clip-path: url(#myClip); */
     /* display: none; */
     opacity: 0;
 }
@@ -894,13 +894,15 @@ a#closeButton b {
 
 /* Sponsors */
 #all-sponsors {
-    width: 80%;
+    /* width: 80%; */
     margin: 0% 10%;
-    background-color: #f5f3f3;
+    /* background-color: #f5f3f3; */
     /* margin-top: 80px; */
     margin-bottom: 20px;
     text-align: center;
-    padding: 20px;
+/*     padding: 20px; */
+/*     padding-top: 100px; */
+    /* padding: 20px; */
 }
 
 #all-sponsors img {
@@ -914,11 +916,14 @@ a#closeButton b {
 }
 
 #all-sponsors h6 {
-    background-color: #D6D6D6;
-    display: inline;
-    padding: 2px;
+    font-weight: bold;
+    background-color: #eaeaea;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 4px 7px;
     text-transform: capitalize;
-    font-size: 12px;
+    font-size: 14px;
     color: #000;
 }
 
