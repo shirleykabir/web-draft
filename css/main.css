@@ -401,7 +401,7 @@ code {
 }
 
 path.loop {
-    animation: jello 10s infinite alternate;
+/*     animation: jello 10s infinite alternate; */
 }
 
 #subteam-preview {
@@ -410,7 +410,7 @@ path.loop {
     background-size: cover;
     background-position: -vw;
     display: block;
-    width: 100vw;
+    width: 60vw;
     height: 120vh;
     position: absolute;
     top: 0vh;
