@@ -33,7 +33,7 @@ function getDateRange(start, end) {
 
 var timelineData = [];
 
-d3.csv("../data/rec-timeline.csv", function (timelineData) {
+d3.csv("./data/rec-timeline.csv", function (timelineData) {
     var timeExtent = d3.extent(timelineData, function (d) {
         return parseTime(d.start);
     });

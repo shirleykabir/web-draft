@@ -1,7 +1,7 @@
 var subteamNav = document.getElementById("subteam-navigation");
 var subteamLinks;
 
-d3.csv("../data/subteams.csv", function(data) {
+d3.csv("./data/subteams.csv", function(data) {
     subteamLinks = data;
     data.forEach(function(subteam) {
         $("#subteam-navigation").append("<li><a onmouseover='showSubteamDetails(this)' onmouseleave='hideSubteamDetails(this)' href=" + subteam.page+ " class='" + subteam["img-src1"] + "'>" + subteam.name + "</a></li>");

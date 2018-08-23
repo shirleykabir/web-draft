@@ -81,7 +81,7 @@ function getGraduationYear(year) {
 }
 
 {/* <div class='member-full-info'><h3>" + member["first-name"] + " " + member["last-name"] + "</h3></div> */}
-d3.csv("../data/members.csv", function(data) {
+d3.csv("./data/members.csv", function(data) {
     data.forEach(function(member){
         if(member.id!="") {
             $("#members-preview").append("<a onclick='openModal(this)' class='" + member.netid + "'><div class='member-item'><img src='" + member["img-src1"]+ "' class='member-bw'><div class='member-preview-info'><h3>" + member["first-name"] + " " + member["last-name"] + "</h3><h6>" + getIsTeamLead(member.lead) + "</h6>" + getLinkedinLink(member["linkedin"]) + getGithubLink(member["github"]) + getPersonalLink(member["website"]) + "</div><div class='member-full member-full-info-" + member.netid + "'><div class='clip-member-color'><img class='member-color' src='" + member["img-src2"] + "'/></div><h3>" + member["first-name"] + " " + member["last-name"] + "</h3><div class='member-more-info'><a id='closeButton' onclick='closeModal(this)' class='" + member.netid + "'><b>close</b></a><h4>Hi, I am a " + getAge(member["date-of-birth"]) + " y/o " + member.major + " major, graduating in " + getGraduationYear(member.year) + " from C/o Engineering.</h4><p>" + member.bio + "</p></div></div></div></a>");
