@@ -28,7 +28,7 @@ $(document).ready(function () {
     });
 });
 
-d3.csv("../data/advisors.csv", function (data) {
+d3.csv("./data/advisors.csv", function (data) {
     data.forEach(function (advisor) {
         $("#advisors .row").append("<div class='col-sm'><i>0" + advisor.id + "</i><img src='" + advisor["img-src"] + "'><h4>" + advisor.name + "</h4><p>" + advisor.description + "</p></div>");
     });
