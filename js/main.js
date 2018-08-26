@@ -1,12 +1,12 @@
 // Fill In Navigation
 
 var navigationLinks = {
-    "About": "/index.html",
-    "The Team": "/the-team.html",
-    "Aircraft": "/aircraft.html",
-    "Recruitment": "/recruitment.html",
-    "Sponsors": "/sponsors.html",
-    "Contact Us": "/contact-us.html"
+    "About": "/web-draft/index.html",
+    "The Team": "/web-draft/the-team.html",
+    "Aircraft": "/web-draft/aircraft.html",
+    "Recruitment": "/web-draft/recruitment.html",
+    "Sponsors": "/web-draft/sponsors.html",
+    "Contact Us": "/web-draft/contact-us.html"
 };
 
 function convertToClassName(url) {
@@ -37,14 +37,11 @@ $('.site-map')[0].innerHTML = footerHTML;
 var path = window.location.pathname;
 var activeLink;
 
-if (path == "/index.html" || path == "/the-team.html" || path == "/aircraft.html" || path == "/recruitment.html" || path == "/sponsors.html" || path == "/contact-us.html") {
+if (path == "/web-draft/index.html" || path == "/web-draft/the-team.html" || path == "/web-draft/aircraft.html" || path == "/web-draft/recruitment.html" || path == "/web-draft/sponsors.html" || path == "/web-draft/contact-us.html") {
     activeLink = "." + convertToClassName(path);
-} else if (path == "/") {
+} else if (path == "/" || path=="/web-draft/") {
     activeLink = "." + convertToClassName("/index.html");
 } else {
     activeLink = "." + convertToClassName("/the-team.html");
 }
 $(activeLink).append("<svg class='hoverLine'><line x1='0' y1='35' x2='100' y2='20' stroke='#E8000060' stroke-width='7' /></svg>");
-// $("#navigation a").append("<svg class='hoverLine'><line x1='0' y1='35' x2='100' y2='20' stroke='#E8000018' stroke-width='5' /></svg>");
-
-// Video Progress Bar

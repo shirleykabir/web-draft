@@ -100,12 +100,11 @@ d3.csv("./data/members.csv", function(data) {
     });
 });
 
-$("#subteam-description").append("<div class='clip-subteam-image'><img class='header' src='../static/subteams/" + img_path + "/2018.jpg'></div>");
+$("#subteam-description").append("<div class='clip-subteam-image'><img class='header' src='static/subteams/" + img_path + "/2018.jpg'></div>");
 
 d3.csv("./data/subteams.csv", function(data) {
     data.forEach(function(s) {
         if(s.id == subteam) {
-            console.log('aye');
             $("#subteam-description").append("<div class='subteam-description-full'>" + s["full-desc"] + "</div>");
         }
     });
