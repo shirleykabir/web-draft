@@ -35,7 +35,7 @@ switch(path) {
         img_path = "leads";
         break;
     default:
-        img_path = path;
+        img_path = path.substring(11);
 }
 
 function getIsTeamLead(lead) {
