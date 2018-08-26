@@ -88,7 +88,7 @@ body {
     display: inline-block;
     width: 100px;
     text-align: center;
-    height: 42px;
+    height: 32px;
     margin-right: 7px;
 }
 
@@ -109,18 +109,6 @@ body {
     height: 50px;
 }
 
-svg.hoverLine {
-    z-index: -1;
-    display: block;
-    margin-top: -40px;
-    position: absolute;
-}
-
-/* @keyframes run {
-    to {
-      stroke-dashoffset: 0;
-    }
-}
 
 #navigation a:hover {
     stroke-dasharray: 1000;
@@ -135,6 +123,26 @@ svg.hoverLine {
     -ms-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
+}
+
+svg.hoverLine {
+    z-index: -1;
+    display: block;
+    margin-top: -40px;
+    position: absolute;
+}
+
+li.apply-now {
+    background-color: #0027ff7a;
+    line-height: 32px;
+}
+
+li.apply-now a {
+   color: #fff;
+}
+
+li.apply-now a:hover {
+   color: #fff;
 }
 
 /* About */
