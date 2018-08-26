@@ -1,4 +1,4 @@
-var path = window.location.pathname.substring(1, window.location.pathname.length-5);
+var path = window.location.pathname.substring(1,11+(window.location.pathname.length-16));
 var subteam, img_path;
 
 switch(path) {
