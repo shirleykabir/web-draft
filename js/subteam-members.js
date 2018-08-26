@@ -1,5 +1,5 @@
 var path = window.location.pathname.substring(1, window.location.pathname.length-5);
-var subteam;
+var subteam, img_path;
 
 switch(path) {
     case "airframe":
@@ -25,6 +25,17 @@ switch(path) {
         break;
     default:
         subteam = 7;
+}
+
+switch(path) {
+    case "design-and-operations":
+        img_path = "desops";
+        break;
+    case "full-team-leads":
+        img_path = "leads";
+        break;
+    default:
+        img_path = path;
 }
 
 function getIsTeamLead(lead) {
@@ -89,6 +100,16 @@ d3.csv("./data/members.csv", function(data) {
     });
 });
 
+$("#subteam-description").append("<div class='clip-subteam-image'><img class='header' src='../static/subteams/" + img_path + "/2018.jpg'></div>");
+
+d3.csv("./data/subteams.csv", function(data) {
+    data.forEach(function(s) {
+        if(s.id == subteam) {
+            console.log('aye');
+            $("#subteam-description").append("<div class='subteam-description-full'>" + s["full-desc"] + "</div>");
+        }
+    });
+});
 
 function closeModal(member) {
     var netid = member.className;

@@ -1,6 +1,18 @@
+// Slideshow
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(2000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
 // Frequently Asked Questions
 var expandables = $(".expand");
-console.log(expandables);
 for (var i = 0; i < expandables.length; i++) {
     expandables[i].addEventListener("click", function () {
         if ($(this).parent().height() == 28) {

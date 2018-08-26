@@ -466,11 +466,24 @@ path.loop {
     padding: 2px;
 }
 
+img.header {
+    width: 100%;
+    margin-top: -30vh;
+}
+.clip-subteam-image {
+    height: 50vh;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.subteam-description-full {
+    margin: 50px 20vw;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+}
 /* Aircraft */
 
-/* #current-aircraft {
-
-} */
 
 #previous-aircraft {
     width: 65vw;
@@ -655,7 +668,7 @@ img.member-bw {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-}
+} 
 
 .member-preview-info h6 {
     color: #ffffffa1;
@@ -703,10 +716,22 @@ img.member-bw {
     transition: all 1s ease-in-out;
 }
 
+.member-full h3 {
+    position:  absolute;
+    background-color: #e22828eb;
+    line-height: 15px;
+    padding: 7px 10px;
+    padding-top: 0px;
+    bottom: 40px;
+    left: 40px;
+    font-weight:  bold;
+}
+
 .clip-member-color {
     width: 45vw;
     overflow: hidden;
     position: absolute;
+    margin-left: -40px;
 }
 
 .member-color {
@@ -775,6 +800,11 @@ a#closeButton b {
     width: 100vw;
 }
 
+#slideshow img {
+    width: 100%;
+    margin-top: -20px;
+}
+
 .recruitment-video {
     width: 30vw;
     height: 30vw;
@@ -792,6 +822,8 @@ a#closeButton b {
     top: 40vh;
     position: absolute;
     box-shadow: 1px 1px 10px 0px #0000004d;
+    overflow: hidden;
+    background-color: #000;
 }
 
 #quotes {
@@ -927,6 +959,24 @@ a#closeButton b {
     color: #000;
 }
 
+svg.interestedLine {
+    margin-top: -50px;
+    margin-left: 5px;
+    position:  absolute;
+}
+
+#interested {
+    padding: 50px 20%;
+    background: #e2282829;
+    font-size: 14px;
+}
+
+a.download {
+    font-weight: bold;
+    text-decoration: underline;
+    color:  #000;
+    padding: 5px;
+}
 /* Contact Us */
 #contact-us {
     font-size: 4vw;
