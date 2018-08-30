@@ -24,7 +24,7 @@ function getDateRange(start, end) {
     var s = parseTime(start);
     var e = parseTime(end);
     if(s.getDate()!=e.getDate()) {
-        return d3.timeFormat("%b %d")(s) + "-" + d3.timeFormat("%d")(e);
+        return d3.timeFormat("%b %d")(s) + "-" + d3.timeFormat("%b %d")(e);
     }
     else {
         return d3.timeFormat("%b %d")(s) + " " + d3.timeFormat("%I:%M")(s) + "-" + d3.timeFormat("%I:%M %p")(e);

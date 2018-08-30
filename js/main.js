@@ -46,3 +46,9 @@ if (path == "/web-draft/index.html" || path == "/web-draft/the-team.html" || pat
     activeLink = "." + convertToClassName("/web-draft/the-team.html");
 }
 $(activeLink).append("<svg class='hoverLine'><line x1='0' y1='35' x2='100' y2='20' stroke='#E8000060' stroke-width='7' /></svg>");
+
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124645730-1');
