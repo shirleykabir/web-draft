@@ -70,6 +70,15 @@ body {
 
 /* Header */
 
+#full-page {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: table;
+}
+
 #header {
     top: 0px;
     left: 0px;
@@ -177,11 +186,13 @@ li.apply-now a:hover {
 #about {
     height: 70%;
     border: 1px solid transparent;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .name {
-    font-size: 6vw;
-    line-height: 12vh;
+    font-size: 5vw;
+    line-height: 6vw;
     /* position: absolute; */
     margin-left: 240px;
     margin-top: 50px;
@@ -189,7 +200,7 @@ li.apply-now a:hover {
 
 .description {
     padding-right: 20%;
-    font-size: 3vw;
+    font-size: 2.5vw;
     line-height: 3.5vw;
     margin-left: 240px;
 }
@@ -1323,6 +1334,9 @@ a.download {
     
     .member-more-info h4 {
         font-size: 1.7vh;
+    }
+    #about {
+        margin-top: 40%;
     }
     
 }
