@@ -1,4 +1,6 @@
-var path = window.location.pathname.substring(1,11+(window.location.pathname.length-16));
+var pathUncropped = window.location.pathname.split("/").pop();
+
+var path = pathUncropped.substring(0, pathUncropped.length-5);
 var subteam, img_path;
 
 switch(path) {
@@ -35,7 +37,7 @@ switch(path) {
         img_path = "leads";
         break;
     default:
-        img_path = path.substring(1);
+        img_path = path
 }
 
 function getIsTeamLead(lead) {

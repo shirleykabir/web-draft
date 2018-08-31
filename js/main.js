@@ -11,7 +11,8 @@ var navigationLinks = {
 };
 
 function convertToClassName(url) {
-    return url.substring(1,11+(url.length-16));
+    var urlCropped = url.split("/").pop();
+    return urlCropped.substring(0, urlCropped.length-5);
 }
 
 var navigationContainer = document.getElementById("navigation");
@@ -35,12 +36,12 @@ footerHTML += "</ul>";
 $('.site-map')[0].innerHTML = footerHTML;
 
 // Highlighting Active Page
-var path = window.location.pathname;
+var path = window.location.pathname.split("/").pop();
 var activeLink;
 
-if (path == "/index.html" || path == "/the-team.html" || path == "/aircraft.html" || path == "/recruitment.html" || path == "/sponsors.html" || path == "/contact-us.html") {
+if (path == "index.html" || path == "the-team.html" || path == "aircraft.html" || path == "recruitment.html" || path == "sponsors.html" || path == "contact-us.html") {
     activeLink = "." + convertToClassName(path);
-} else if (path == "/" || path=="/") {
+} else if (path == "/" || path=="") {
     activeLink = "." + convertToClassName("/index.html");
 } else {
     activeLink = "." + convertToClassName("/the-team.html");
