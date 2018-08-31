@@ -7,7 +7,7 @@ var navigationLinks = {
     "Recruitment": "/recruitment.html",
     "Sponsors": "/sponsors.html",
     "Contact Us": "/contact-us.html",
-    "Apply Now!": "https://goo.gl/forms/WOQdGBSn8sqMEdYk1"
+    "Apply Now!": "/apply"
 };
 
 function convertToClassName(url) {
