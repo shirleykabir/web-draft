@@ -4,7 +4,7 @@ var subteamLinks;
 d3.csv("./data/subteams.csv", function(data) {
     subteamLinks = data;
     data.forEach(function(subteam) {
-        $("#subteam-navigation").append("<li><a onmouseover='showSubteamDetails(this)' onmouseleave='hideSubteamDetails(this)' href=" + '/web-draft' + subteam.page+ " class='" + subteam["img-src1"] + "'>" + subteam.name + "</a></li>");
+        $("#subteam-navigation").append("<li><a onmouseover='showSubteamDetails(this)' onmouseleave='hideSubteamDetails(this)' href=" + subteam.page+ " class='" + subteam["img-src1"] + "'>" + subteam.name + "</a></li>");
         $("#subteam-preview").append("<div class='" + subteam["img-src1"] + "-preview subteam-preview'></div>");
         document.getElementsByClassName(subteam["img-src1"] + "-preview")[0].style.backgroundImage = "url('static/subteams/" + subteam["img-src1"] + ".jpg')";
     });
