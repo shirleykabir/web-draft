@@ -423,6 +423,15 @@ code {
 }
 
 /* Subteam Navigation */
+#subteam-navigation-container {
+    height: 100vh;
+    display: table;
+    width: 100vw;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    position:  relative;
+}
 
 #subteam-navigation {
     height: 70vh;
@@ -1277,7 +1286,11 @@ a.download {
     }
 
     #subteam-navigation {
-        margin-top: 10vh;
+        /* margin-top: 10vh; */
+        display: table-cell;
+        vertical-align: middle;
+        /* left: 10%; */
+        padding-left: 10%;
     }
     
     #subteam-preview {

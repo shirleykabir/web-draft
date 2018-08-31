@@ -2,25 +2,25 @@ var path = window.location.pathname.substring(11,11+(window.location.pathname.le
 var subteam, img_path;
 
 switch(path) {
-    case "airframe":
+    case "full-team-leads":
         subteam = 0;
         break;
-    case "autopilot":
+    case "airframe":
         subteam = 1;
         break;
-    case "design-and-operations":
+    case "autopilot":
         subteam = 2;
         break;
-    case "electrical":
+    case "design-and-operations":
         subteam = 3;
         break;
-    case "mechanical":
+    case "electrical":
         subteam = 4;
         break;
-    case "platform":
+    case "mechanical":
         subteam = 5;
         break;
-    case "full-team-leads":
+    case "platform":
         subteam = 6;
         break;
     default:
