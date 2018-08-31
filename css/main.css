@@ -447,7 +447,7 @@ path.loop {
     background-position: -vw;
     display: block;
     width: 60vw;
-    height: 33vh;
+    height: 120vh;
     position: absolute;
     top: 0vh;
     left: 40vw;
@@ -1264,6 +1264,67 @@ a.download {
     #full-social-media {
         margin-right: 0vw;
     }
+
+    #subteam-navigation {
+        margin-top: 10vh;
+    }
+    
+    #subteam-preview {
+        margin-top: 20vh;
+    }
+
+    img.header {
+        margin-top: 0px;
+    }
+    
+    .clip-subteam-image {
+        height: 24vh;
+    }
+
+    img.header {
+        margin-top: 0px;
+    }
+    
+    .clip-subteam-image {
+        height: 24vh;
+    }
+    
+    .clip-member-color {
+        width: 100vw;
+        height: 40vh;
+    }
+    
+    img.member-color {
+        height: 58vh;
+        margin-top: -10vh;
+    }
+    
+    .member-full h3 {
+        top: 0px;
+        margin-top: 37vh;
+        height: 2vh;
+        font-size: 7vw;
+    }
+    
+    .member-more-info {
+        margin-left: 20vw;
+        padding-top: 0px;
+        /* margin-top: 30vh; */
+        height: 30vh;
+        width: 60vw;
+        margin-top: 49vh;
+        font-size: 1.3vh;
+    }
+    
+    a#closeButton {
+        right: 10vw;
+        font-size: 1.2vh;
+    }
+    
+    .member-more-info h4 {
+        font-size: 1.7vh;
+    }
+    
 }
 
 /* @ 1100px width bring in nav */
