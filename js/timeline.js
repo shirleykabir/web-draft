@@ -65,13 +65,14 @@ d3.csv("./data/rec-timeline.csv", function (timelineData) {
                 else {
                     svg.append("rect")
                     .attr("x", timeScale(parseTime(e.start)) + 30)
-                    .attr("y", 100-8)
+                    .attr("y", 100-3)
                     .attr("width", (timeScale(parseTime(e.end)) - timeScale(parseTime(e.start))) + 30)
-                    .attr("height", 16)
+                    .attr("height", 10)
                     .attr("rx", 8)
                     .attr("ry", 8)
                     .style("fill", "#fff")
-                    .style("stroke", "#E22828")
+                    .style("z-index", "-1")
+                    .style("stroke", "#f39696")
                     .style("stroke-width", "3");
                 }
                 svg.append("line")

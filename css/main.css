@@ -53,9 +53,18 @@
     src: url("../static/fonts/apercu-medium-pro.woff");
 }
 
+html { 
+    height: 100%; 
+    margin: 0px; 
+    padding: 0px; 
+}
+
 body {
     font-family: 'Apercu';
     /* font-family: 'Akkurat'; */
+    height: 100%; 
+    margin: 0px; 
+    padding: 0px;
 }
 
 /* Header */
@@ -64,7 +73,7 @@ body {
     top: 0px;
     left: 0px;
     border: 1px solid transparent;
-    height: 30vh;
+    height: 30%;
 }
 
 .compact-logo {
@@ -148,12 +157,12 @@ li.apply-now a:hover {
 /* About */
 
 #about {
-    height: 70vh;
+    height: 70%;
     border: 1px solid transparent;
 }
 
 .name {
-    font-size: 11vh;
+    font-size: 6vw;
     line-height: 12vh;
     /* position: absolute; */
     margin-left: 240px;
@@ -162,8 +171,8 @@ li.apply-now a:hover {
 
 .description {
     padding-right: 20%;
-    font-size: 5.5vh;
-    line-height: 6.5vh;
+    font-size: 3vw;
+    line-height: 3.5vw;
     margin-left: 240px;
 }
 
@@ -1086,3 +1095,24 @@ a.download {
     75% {transform:scale(1.75); opacity:1;}
     100% {transform:scale(2); opacity:0;}
   }
+
+
+/* Responsive - Mobile */
+
+@media (min-width: 1024px) {
+  
+}
+
+@media (max-width: 1100px) {
+    .name {
+        font-size: 10vw;
+        line-height:  11vw;
+    }
+    
+    .description {
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+}
+
+/* @ 1100px width bring in nav */
