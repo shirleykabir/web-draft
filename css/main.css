@@ -62,9 +62,10 @@ html {
 body {
     font-family: 'Apercu';
     /* font-family: 'Akkurat'; */
-    height: 100%; 
-    margin: 0px; 
+    height: 100%;
+    margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -446,7 +447,7 @@ path.loop {
     background-position: -vw;
     display: block;
     width: 60vw;
-    height: 120vh;
+    height: 33vh;
     position: absolute;
     top: 0vh;
     left: 40vw;
@@ -866,7 +867,7 @@ a#closeButton b {
     height: 24vw;
     z-index: -1;
     left: 10vw;
-    top: 40vh;
+    margin-top: -25%;
     position: absolute;
     box-shadow: 1px 1px 10px 0px #0000004d;
     overflow: hidden;
@@ -1117,11 +1118,42 @@ a.download {
 
 /* Responsive - Mobile */
 
-@media (min-width: 1024px) {
-  
+
+@media (max-width: 600px) {
+    #header {
+        height: 0px;
+    }
+
+    .makeBigger {
+        width: 60vw;
+        height: 120vh;
+    }
+    
+    #subteam-preview {
+        background-position: -0vw -30vw;
+        height: 90vh;
+    }
+    img.header {
+        margin-top: 0vh;
+    }
+    
+    .clip-subteam-image {
+        height: 30vh;
+    }
+    
+    div#subteam-description {
+        margin-top: 0px;
+    }
+    
+    #header {
+        height: 0px;
+    }
 }
 
 @media (max-width: 1100px) {
+    #header {
+        height: 0px;
+    }
     .name {
         font-size: 10vw;
         line-height:  11vw;
@@ -1137,8 +1169,9 @@ a.download {
     }
 
     video {
-        width: 100%;
+        width: 100vw;
         margin: 0px;
+        /* border: 1px solid red; */
     }
     
     .play {
@@ -1195,7 +1228,7 @@ a.download {
     }
 
     .compact-logo {
-        width: 100px;
+        width: 50px;
     }
 
     .apply-now a {
@@ -1204,6 +1237,32 @@ a.download {
 
     .mobile-close {
         display: none;
+    }
+    #subteam-navigation li {
+        font-size: 3vh;
+        line-height:  4vh;
+    }
+
+    #slideshows {
+        margin-top: 100px;
+    }
+
+    #faq {
+        padding-bottom: 600px;
+    }
+
+    #contact-us {
+        font-size: 8vw;
+        line-height: 8.5vw;
+    }
+    
+    
+    #full-social-media a {
+        font-size: 4vw;
+    }
+
+    #full-social-media {
+        margin-right: 0vw;
     }
 }
 
