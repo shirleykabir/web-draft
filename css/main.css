@@ -84,6 +84,14 @@ body {
     width: 60px;
 }
 
+.mobile-menu-button {
+    width: 50px;
+    position:  fixed;
+    top: 100px;
+    right: 100px;
+    display: none;
+}
+
 #navigation {
     position: absolute;
     top: 0px;
@@ -303,6 +311,7 @@ text.stats-regular {
 
 #advisors {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #advisors img {
@@ -1112,6 +1121,22 @@ a.download {
     .description {
         font-size: 6vw;
         line-height: 7vw;
+    }
+
+    #footer {
+        display: none;
+    }
+
+    video {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .play {
+        margin-top: -25%;
+    }
+    .mobile-menu-button {
+        display: block;
     }
 }
 
