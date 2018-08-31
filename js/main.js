@@ -41,7 +41,7 @@ var activeLink;
 
 if (path == "/index.html" || path == "/the-team.html" || path == "/aircraft.html" || path == "/recruitment.html" || path == "/sponsors.html" || path == "/contact-us.html") {
     activeLink = "." + convertToClassName(path);
-} else if (path == "/" || path=="/") {
+} else if (path == "/" || path=="") {
     activeLink = "." + convertToClassName("/index.html");
 } else {
     activeLink = "." + convertToClassName("/the-team.html");
