@@ -1,4 +1,4 @@
-var path = window.location.pathname.substring(11,11+(window.location.pathname.length-16));
+var path = window.location.pathname.substring(1,11+(window.location.pathname.length-16));
 var subteam, img_path;
 
 switch(path) {
@@ -35,7 +35,7 @@ switch(path) {
         img_path = "leads";
         break;
     default:
-        img_path = path.substring(11);
+        img_path = path.substring(1);
 }
 
 function getIsTeamLead(lead) {
