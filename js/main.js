@@ -7,7 +7,7 @@ var navigationLinks = {
     "Recruitment": "/recruitment.html",
     "Sponsors": "/sponsors.html",
     "Contact Us": "/contact-us.html",
-    "Apply Now!": "/apply-now.html"
+    "Apply Now!": "/apply"
 };
 
 function convertToClassName(url) {
