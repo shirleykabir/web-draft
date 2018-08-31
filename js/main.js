@@ -53,15 +53,17 @@ function openMenu() {
         opacity: 1,
         top: "0vh",
       }, 2000, function() {
-        // Animation complete.
+        document.getElementsByClassName("mobile-close")[0].style.display="block";
     });
+    
 }
 
 function closeMenu() {
+    document.getElementsByClassName("mobile-close")[0].style.display="none";
     $( "#navigation" ).animate({
         opacity: 0,
         top: "-200vh",
-      }, 1000, function() {
+      }, 2000, function() {
         // Animation complete.
     });
 }

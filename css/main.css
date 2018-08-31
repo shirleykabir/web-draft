@@ -94,6 +94,11 @@ body {
 
 .mobile-close {
     display: none;
+    width: 50px;
+    z-index: 1000;
+    position: fixed;
+    top: 100px;
+    right: 100px;
 }
 
 #navigation {
@@ -1198,7 +1203,7 @@ a.download {
     }
 
     .mobile-close {
-        display: block;
+        display: none;
     }
 }
 
