@@ -374,6 +374,10 @@ code {
     margin-top: 4px;
 }
 
+.clicky-link {
+    cursor: pointer;
+}
+
 .social-media li {
     display: block;
 }
