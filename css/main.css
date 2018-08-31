@@ -1282,6 +1282,8 @@ a.download {
     
     #subteam-preview {
         margin-top: 20vh;
+        width: 60vw;
+        height: 34vh;
     }
 
     img.header {
