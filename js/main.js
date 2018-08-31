@@ -11,7 +11,8 @@ var navigationLinks = {
 };
 
 function convertToClassName(url) {
-    return url.substring(1,11+(url.length-16));
+    var urlCropped = url.split("/").pop();
+    return urlCropped.substring(0, urlCropped.length-5);
 }
 
 var navigationContainer = document.getElementById("navigation");
