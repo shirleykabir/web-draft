@@ -36,10 +36,10 @@ footerHTML += "</ul>";
 $('.site-map')[0].innerHTML = footerHTML;
 
 // Highlighting Active Page
-var path = window.location.pathname;
+var path = window.location.pathname.split("/").pop();
 var activeLink;
 
-if (path == "/index.html" || path == "/the-team.html" || path == "/aircraft.html" || path == "/recruitment.html" || path == "/sponsors.html" || path == "/contact-us.html") {
+if (path == "index.html" || path == "the-team.html" || path == "aircraft.html" || path == "recruitment.html" || path == "sponsors.html" || path == "contact-us.html") {
     activeLink = "." + convertToClassName(path);
 } else if (path == "/" || path=="") {
     activeLink = "." + convertToClassName("/index.html");
