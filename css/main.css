@@ -80,7 +80,7 @@ body {
     position: fixed;
     left: 100px;
     top: 100px;
-    z-index:  1;
+    z-index: 100;
     width: 60px;
 }
 
@@ -89,6 +89,10 @@ body {
     position:  fixed;
     top: 100px;
     right: 100px;
+    display: none;
+}
+
+.mobile-close {
     display: none;
 }
 
@@ -1136,6 +1140,64 @@ a.download {
         margin-top: -25%;
     }
     .mobile-menu-button {
+        display: block;
+    }
+
+    #navigation {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        padding: 50% 20%;
+        text-align: left;
+        z-index: 1;
+        top: -200vh;
+        opacity: 0;
+    }
+    
+    #navigation li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        height: auto;
+        margin-right: 0px;
+        width: auto;
+    }
+    
+    #navigation a {
+        font-size: 8vw;
+        line-height: 10vw;
+        padding: 20px;
+        text-transform: lowercase;
+        font-weight: normal;
+        display: block;
+    }
+    
+    li.apply-now {
+        background-color: transparent;
+    }
+    
+    .apply-now a {
+        background-color: #0027ff59;
+        width: 55vw;
+    }
+    
+    svg.hoverLine {
+        display: none;
+    }
+
+    .compact-logo {
+        width: 100px;
+    }
+
+    .apply-now a {
+        width: 44vw;
+    }
+
+    .mobile-close {
         display: block;
     }
 }

@@ -26,9 +26,11 @@
 
 <body>
   <div id="header">
-      <img class="mobile-menu-button" src="static/menu.svg">
+      <a href="javascript:void(0);" onclick="openMenu()" class="mobile-menu-button" ><img src="static/menu.svg"></a>
       <img class="compact-logo" src="static/compact-logo.png">
-      <div id="navigation"></div>
+      <div id="navigation">
+          <a href="javascript:void(0);" onclick="closeMenu()" class="mobile-close" ><img src="static/close.svg"></a>
+      </div>
     </div>
   <div id="about">
     <div class="name">Cornell University<br><b>Unmanned Air Systems</b></div>

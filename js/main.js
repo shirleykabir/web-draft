@@ -47,6 +47,26 @@ if (path == "/web-draft/index.html" || path == "/web-draft/the-team.html" || pat
 }
 $(activeLink).append("<svg class='hoverLine'><line x1='0' y1='35' x2='100' y2='20' stroke='#E8000060' stroke-width='7' /></svg>");
 
+
+function openMenu() {
+    $( "#navigation" ).animate({
+        opacity: 1,
+        top: "0vh",
+      }, 2000, function() {
+        // Animation complete.
+    });
+}
+
+function closeMenu() {
+    $( "#navigation" ).animate({
+        opacity: 0,
+        top: "-200vh",
+      }, 1000, function() {
+        // Animation complete.
+    });
+}
+
+
 window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
