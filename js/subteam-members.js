@@ -125,7 +125,7 @@ function getMinors(minor) {
         return "";
     }
     else {
-        return "and a " + minor + " minor(s)";
+        return " and a " + minor + " minor(s)";
     }
 }
 
