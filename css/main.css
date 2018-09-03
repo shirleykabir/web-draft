@@ -95,7 +95,7 @@ body {
 }
 
 .mobile-menu-button {
-    width: 50px;
+    width: 41px;
     position:  fixed;
     top: 100px;
     right: 100px;
@@ -439,11 +439,11 @@ code {
 
 /* Subteam Navigation */
 #subteam-navigation-container {
-    height: 100vh;
+    height: 70vh;
     display: table;
     width: 100vw;
     margin: 0px;
-    top: 0px;
+    top: -5vh;
     left: 0px;
     position:  relative;
 }
@@ -545,6 +545,8 @@ img.header {
     height: 50vh;
     overflow: hidden;
     margin-bottom: 30px;
+    background-position: center;
+    background-size: cover;
 }
 
 .subteam-description-full {
@@ -555,22 +557,29 @@ img.header {
 }
 /* Aircraft */
 #placement {
-    margin-top: -300px;
-    position:  absolute;
-    left: 65%;
 }
 
+#current-aircraft .row {
+    margin: 0% 10%;
+}
 #current-aircraft h4 {
     font-size: 30px;
     font-weight:  bold;
-    position:  absolute;
-    padding-top: 20%;
-    right: 20%;
+    padding: 20px;
+}
+
+#current-aircraft h6 {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+#current-aircraft h6 b {
+    color: #d13c3a;
 }
 
 #previous-aircraft {
-    width: 65vw;
-    margin-left: calc((100vw - 65vw)/2);
 }
 
 #previous-aircraft img {
@@ -855,6 +864,28 @@ a#closeButton b {
     color: #ffffffba;
 }
 
+.inner-social {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+}
+
+.inner-social-links {
+    color: #fff;
+    font-size: 12px;
+    margin: 5px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+
+.inner-social-links:hover {
+    color: #e03637;
+    border-bottom: 2px solid #e03637;
+    text-decoration: none;
+}
+
 /* Testing graphics */
 
 .aloda {
@@ -1004,7 +1035,7 @@ a#closeButton b {
     border: 1px solid #E5E5E5;
 }
 #timeline {
-    margin-left: calc((100% - 900px)/ 2);
+    margin-left: 100px;
 }
 
 /* Sponsors */
@@ -1150,10 +1181,65 @@ a.download {
     100% {transform:scale(2); opacity:0;}
   }
 
+/* Alumni */
+#map { 
+    /* position:absolute;  */
+    top:0; 
+    bottom:0; 
+    width:100%; 
+    height: 80vh;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.alum-marker {
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid #d13c3a;
+    box-shadow: 0px 0px 3px 0px #040404;
+}
+.mapboxgl-popup-content {
+    position: absolute;
+/*     margin-top: 150px; */
+    margin-left: -100px;
+/*     padding-top: 40px; */
+    z-index: 1;
+    top: 60px;
+    font-size: 12px;
+    font-family: 'Apercu';
+    font-weight: 600;
+    background-color: #fffffffc;
+    color: #000;
+    width: 200px;
+/*     height: 120px; */
+    text-align: center;
+}
+
+.mapboxgl-popup-tip {
+    display: none;
+}
+
+#alumni h4 {
+    font-weight: bold;
+    margin-top:  -40px;
+    margin-bottom:  40px;
+    text-align: center;
+    color: #000;
+    background-color: #e22828eb;
+    line-height: 1px;
+    padding: 7px 10px;
+    padding-top: 0px;
+    bottom: 40px;
+    left: 40px;
+    font-weight:  bold;
+    display: table;
+    margin-left: 47%;
+}
 
 /* Responsive - Mobile */
-
-
 @media (max-width: 600px) {
     #header {
         height: 0px;
@@ -1184,6 +1270,8 @@ a.download {
         height: 0px;
     }
 }
+
+
 
 @media (max-width: 1100px) {
     #header {
@@ -1218,13 +1306,13 @@ a.download {
 
     #navigation {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: #fff;
         position: fixed;
         top: 0px;
         left: 0px;
         margin: 0px;
-        padding: 50% 20%;
+        padding: 20vh 20vw;
         text-align: left;
         z-index: 1;
         top: -200vh;
@@ -1241,14 +1329,24 @@ a.download {
     }
     
     #navigation a {
-        font-size: 8vw;
-        line-height: 10vw;
+        font-size: calc(30vh/7);
+        line-height: calc(24vh/7);
         padding: 20px;
         text-transform: lowercase;
         font-weight: normal;
         display: block;
+        font-weight: bold;
     }
     
+    #navigation ul {
+        overflow: scroll;
+        height: auto;
+    }
+    #navigation li:nth-child(7) {
+        width: auto;
+        height: auto;
+    }
+
     li.apply-now {
         background-color: transparent;
     }
@@ -1367,7 +1465,7 @@ a.download {
     }
 
     a#closeButton b {
-        font-size: 2.5vw;
+        font-size: 1.5vh;
     }
     
     .member-more-info h4 {
@@ -1377,7 +1475,33 @@ a.download {
     #about {
         margin-top: 40%;
     }
+
+    #subteam-navigation-container {
+        height: 100vh;
+    }
     
+    #map {
+        height: 100vh;
+        margin-top: 0vh;
+        z-index: -1;
+    }
+    /* Aircraft */
+
 }
 
-/* @ 1100px width bring in nav */
+
+
+@media (min-width: 800px, max-width: 1100px) {
+    img.member-color {
+        height: auto;
+        width: 100vw;
+        margin-top: -50vh;
+    }
+    .clip-member-color {
+        height: 50vh;
+    }
+    .member-more-info { 
+        margin-top: 60vh;
+        top: 0vh;
+    }
+}

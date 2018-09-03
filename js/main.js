@@ -42,9 +42,9 @@ var activeLink;
 if (path == "index.html" || path == "the-team.html" || path == "aircraft.html" || path == "recruitment.html" || path == "sponsors.html" || path == "contact-us.html") {
     activeLink = "." + convertToClassName(path);
 } else if (path == "/" || path=="") {
-    activeLink = "." + convertToClassName("index");
+    activeLink = "." + convertToClassName("/index.html");
 } else {
-    activeLink = "." + convertToClassName("the-team");
+    activeLink = "." + convertToClassName("/the-team.html");
 }
 $(activeLink).append("<svg class='hoverLine'><line x1='0' y1='35' x2='100' y2='20' stroke='#E8000060' stroke-width='7' /></svg>");
 

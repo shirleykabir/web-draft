@@ -76,6 +76,33 @@ function getPersonalLink(url) {
     }
 }
 
+function getInnerLinkedinLink(url) {
+    if(url.length > 0) {
+        return "<a href='" + url + "' class='inner-social-links'>LinkedIn</a>";
+    }
+    else {
+        return "";
+    }
+}
+
+function getInnerGithubLink(url) {
+    if(url.length > 0) {
+        return "<a href='" + url + "' class='inner-social-links'>Github</a>";
+    }
+    else {
+        return "";
+    }
+}
+
+function getInnerPersonalLink(url) {
+    if(url.length > 0) {
+        return "<a href='" + url + "' class='inner-social-links'>Personal Website</a>";
+    }
+    else {
+        return "";
+    }
+}
+
 function getAge(dob) {
     var today = new Date();
     var birthDate = new Date(dob);
@@ -93,16 +120,27 @@ function getGraduationYear(year) {
     return gradYear;
 }
 
+function getMinors(minor) {
+    if(minor=="") {
+        return "";
+    }
+    else {
+        return "and a " + minor + " minor(s)";
+    }
+}
+
 {/* <div class='member-full-info'><h3>" + member["first-name"] + " " + member["last-name"] + "</h3></div> */}
 d3.csv("./data/members.csv", function(data) {
     data.forEach(function(member){
         if(member.id!="" && member.subteam==subteam) {
-            $("#members-preview").append("<a onclick='openModal(this)' class='" + member.netid + "'><div class='member-item'><img src='" + member["img-src1"].substring(1) + "' class='member-bw'><div class='member-preview-info'><h3>" + member["first-name"] + " " + member["last-name"] + "</h3><h6>" + getIsTeamLead(member.lead) + "</h6>" + getLinkedinLink(member["linkedin"]) + getGithubLink(member["github"]) + getPersonalLink(member["website"]) + "</div><div class='member-full member-full-info-" + member.netid + "'><div class='clip-member-color'><img class='member-color' src='" + member["img-src2"].substring(1) + "'/></div><h3>" + member["first-name"] + " " + member["last-name"] + "</h3><div class='member-more-info'><a id='closeButton' onclick='closeModal(this)' class='" + member.netid + "'><b>close</b></a><h4>Hi, I am a " + getAge(member["date-of-birth"]) + " y/o " + member.major + " major, graduating in " + getGraduationYear(member.year) + " from C/o Engineering.</h4><p>" + member.bio + "</p></div></div></div></a>");
+            console.log(member.minor);
+            $("#members-preview").append("<a onclick='openModal(this)' class='" + member.netid + "'><div class='member-item'><img src='" + member["img-src1"].substring(1) + "' class='member-bw'><div class='member-preview-info'><h3>" + member["first-name"] + " " + member["last-name"] + "</h3><h6>" + getIsTeamLead(member.lead) + "</h6>" + getLinkedinLink(member["linkedin"]) + getGithubLink(member["github"]) + getPersonalLink(member["website"]) + "</div><div class='member-full member-full-info-" + member.netid + "'><div class='clip-member-color'><img class='member-color' src='" + member["img-src2"].substring(1) + "'/></div><h3>" + member["first-name"] + " " + member["last-name"] + "</h3><div class='member-more-info'><a id='closeButton' onclick='closeModal(this)' class='" + member.netid + "'><b>close</b></a><h4>Hi, I am a " + getAge(member["date-of-birth"]) + " y/o " + member.major + " major" + getMinors(member.minor) + ", graduating in " + getGraduationYear(member.year) + " from C/o Engineering.</h4><p>" + member.bio + "</p></div><div class='inner-social'>" + getInnerLinkedinLink(member["linkedin"]) + getInnerGithubLink(member["github"]) + getInnerPersonalLink(member["website"]) + "</div></div></div></a>");
         }
     });
 });
 
-$("#subteam-description").append("<div class='clip-subteam-image'><img class='header' src='static/subteams/" + img_path + "/2018.jpg'></div>");
+$("#subteam-description").append("<div class='clip-subteam-image " + img_path + "'></div>");
+document.getElementsByClassName(img_path)[0].style.backgroundImage = "url('static/subteams/" + img_path + "/2018.jpg')";
 
 d3.csv("./data/subteams.csv", function(data) {
     data.forEach(function(s) {

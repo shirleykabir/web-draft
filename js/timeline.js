@@ -1,8 +1,10 @@
 // 10/15/2018 12:00:00AM
+var width = window.innerWidth-200;
+var height = 200;
 var svg = d3.select("#timeline")
     .append("svg")
-    .attr("width", 900)
-    .attr("height", 200)
+    .attr("width", width)
+    .attr("height", height)
     .attr("id", "r-timeline");
 
 var parseTime = d3.timeParse("%m/%d/%Y %I:%M:%S%p");
@@ -40,11 +42,11 @@ d3.csv("./data/rec-timeline.csv", function (timelineData) {
 
     var timeScale = d3.scaleLog()
         .domain(timeExtent)
-        .range([0, 800]);
+        .range([0, width-100]);
 
     svg.append("line")
         .attr("x1", 0)
-        .attr("x2", 900)
+        .attr("x2", width)
         .attr("y1", 100)
         .attr("y2", 100)
         .style("stroke", "#ddd")
